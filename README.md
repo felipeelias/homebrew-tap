@@ -13,11 +13,13 @@ brew tap felipeelias/tap
 | Formula | Description |
 | --- | --- |
 | [claude-notifier](https://github.com/felipeelias/claude-notifier) | Notification dispatcher for Claude Code hooks |
+| [claude-statusline](https://github.com/felipeelias/claude-statusline) | Configurable status line for Claude Code |
 
 Install a formula:
 
 ```sh
 brew install felipeelias/tap/claude-notifier
+brew install felipeelias/tap/claude-statusline
 ```
 
 ## Contributing
