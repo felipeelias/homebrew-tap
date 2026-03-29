@@ -5,21 +5,21 @@
 class ClaudeStatusline < Formula
   desc "Configurable status line for Claude Code"
   homepage "https://github.com/felipeelias/claude-statusline"
-  version "0.7.0"
+  version "0.8.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/felipeelias/claude-statusline/releases/download/v0.7.0/claude-statusline_0.7.0_darwin_amd64.tar.gz"
-      sha256 "5e3a5f679cbad246fa128d036bf6c0c36d5eb0ca090c73fe36210f3464109bb2"
+      url "https://github.com/felipeelias/claude-statusline/releases/download/v0.8.0/claude-statusline_0.8.0_darwin_amd64.tar.gz"
+      sha256 "6d381aff25122585eb37a64b8e3f6b50f583ae8070ed3b7baff7280bd4e0bcbb"
 
       define_method(:install) do
         bin.install "claude-statusline"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/felipeelias/claude-statusline/releases/download/v0.7.0/claude-statusline_0.7.0_darwin_arm64.tar.gz"
-      sha256 "0ef583c6aa32601c84504c487b19b133c30926d5e5be7f849c5ddc64e6f31da0"
+      url "https://github.com/felipeelias/claude-statusline/releases/download/v0.8.0/claude-statusline_0.8.0_darwin_arm64.tar.gz"
+      sha256 "a1c8928402ef8e1a62360470bc5c6020c2cea37a4a2f774499522417592cd6b6"
 
       define_method(:install) do
         bin.install "claude-statusline"
@@ -29,15 +29,15 @@ class ClaudeStatusline < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/felipeelias/claude-statusline/releases/download/v0.7.0/claude-statusline_0.7.0_linux_amd64.tar.gz"
-      sha256 "16553bc11f2edb553e0485f9b1813b0587b81ad1dff3445c60bfb8ac44924984"
+      url "https://github.com/felipeelias/claude-statusline/releases/download/v0.8.0/claude-statusline_0.8.0_linux_amd64.tar.gz"
+      sha256 "ddf55bad16890772581985b42dbd20a1a5eae89afa0aec853af6931462e30649"
       define_method(:install) do
         bin.install "claude-statusline"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/felipeelias/claude-statusline/releases/download/v0.7.0/claude-statusline_0.7.0_linux_arm64.tar.gz"
-      sha256 "fd9d35757fac1f5e597a94420952cb99d37512351a09e6236d41d12c2df3d8ba"
+      url "https://github.com/felipeelias/claude-statusline/releases/download/v0.8.0/claude-statusline_0.8.0_linux_arm64.tar.gz"
+      sha256 "a53d79c8711fe9ad618808997aacf9cd282e82a2ec87bd41beb7fd5e31c9c8b6"
       define_method(:install) do
         bin.install "claude-statusline"
       end
