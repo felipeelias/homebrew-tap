@@ -5,21 +5,21 @@
 class ClaudeNotifier < Formula
   desc "Notification dispatcher for Claude Code hooks"
   homepage "https://github.com/felipeelias/claude-notifier"
-  version "0.1.2"
+  version "0.1.4"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/felipeelias/claude-notifier/releases/download/v0.1.2/claude-notifier_0.1.2_darwin_amd64.tar.gz"
-      sha256 "a2558d92b5a4de6ebafa76f10f68fa1b502b5a725459371862e4c5d1b38e61bc"
+      url "https://github.com/felipeelias/claude-notifier/releases/download/v0.1.4/claude-notifier_0.1.4_darwin_amd64.tar.gz"
+      sha256 "e88fe0c883f45db1abc8f122b82864355172d538085480949fb3472ced6e0e99"
 
       define_method(:install) do
         bin.install "claude-notifier"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/felipeelias/claude-notifier/releases/download/v0.1.2/claude-notifier_0.1.2_darwin_arm64.tar.gz"
-      sha256 "90fd9b05ea7ead64f10b27e2af2d5632b22066bc847b0280ec4176a17d533115"
+      url "https://github.com/felipeelias/claude-notifier/releases/download/v0.1.4/claude-notifier_0.1.4_darwin_arm64.tar.gz"
+      sha256 "4c9293e1ec42329d6d34960826d852b2d52b7029dac8c57e6987ddec5e2324a2"
 
       define_method(:install) do
         bin.install "claude-notifier"
@@ -29,15 +29,15 @@ class ClaudeNotifier < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/felipeelias/claude-notifier/releases/download/v0.1.2/claude-notifier_0.1.2_linux_amd64.tar.gz"
-      sha256 "882c1cb3cc7a944656e4f1b0b9f266f76beb317c24fdd5eb392b58825bdbae90"
+      url "https://github.com/felipeelias/claude-notifier/releases/download/v0.1.4/claude-notifier_0.1.4_linux_amd64.tar.gz"
+      sha256 "6345b6fc6ed0cad84e272b5f062ec6708cdc3c9dd1693e8a9b08e702bb023ce7"
       define_method(:install) do
         bin.install "claude-notifier"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/felipeelias/claude-notifier/releases/download/v0.1.2/claude-notifier_0.1.2_linux_arm64.tar.gz"
-      sha256 "86d3c124fe9d0de8fe7cb13bd4f7d6a1001479efe97300a543717f51b7ceb721"
+      url "https://github.com/felipeelias/claude-notifier/releases/download/v0.1.4/claude-notifier_0.1.4_linux_arm64.tar.gz"
+      sha256 "4283be766558cbbfd577a91f09d01df119a4333c11412821db73e7a44801567a"
       define_method(:install) do
         bin.install "claude-notifier"
       end
